@@ -28,7 +28,7 @@ void Hotel::addRoom(const Chambre& room){
 
 bool Hotel::delRoom(int idRoom){
     for (int i = 0; i < rooms_.size(); i++) {
-        if (rooms_[i].getId() == idRoom){
+        if (rooms_[i].getNumber() == idRoom){
             rooms_.erase(rooms_.begin() + i);
             return true; 
         }
