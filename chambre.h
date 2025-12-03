@@ -14,6 +14,7 @@ class Chambre{
     int getNumber() const;
     std::string getType() const;
     int getPrice() const;
+    void setPrice(int val);
 };
 
 #endif
